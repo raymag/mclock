@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --dark-blue-color: rgba(19, 70, 129, 0.781);
+    --dark-pale-blue-color: rgba(19, 70, 129, 0.699);
+    --dark-red-color: rgba(129, 19, 61, 0.781);
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: var(--dark-blue-color);
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.red{
+    color: rgba(129, 19, 61, 0.664);
+}
+#clock{
+    width: 300px;
+    height: 300px;
+    border: solid 8px var(--dark-pale-blue-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clock #hour-pointer{
+    width: 10px;
+    height: 70px;
+    background: var(--dark-blue-color);
+    border-radius: 5px;
+    transform: rotate(0deg) translate( 0, -35px );
+    position: absolute;
+}
+#clock #minute-pointer{
+    width: 10px;
+    height: 120px;
+    background: var(--dark-red-color);
+    border-radius: 5px;
+    transform: rotate(45deg) translate( 0, -60px );
+    position: absolute;
+}
