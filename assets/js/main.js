@@ -9,7 +9,7 @@ function setClock(){
     let minutes = new Date(time).getMinutes()
 
     let hoursDegrees = 15*hours
-    let minutesDegrees = .25*-minutes
+    let minutesDegrees = 6*minutes
 
     hourPointer.style.transform = `rotate(${hoursDegrees}deg) translate( 0, -35px )`
     minutePointer.style.transform = `rotate(${minutesDegrees}deg) translate( 0, -60px )`
