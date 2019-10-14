@@ -14,6 +14,12 @@ function setClock(){
     hourPointer.style.transform = `rotate(${hoursDegrees}deg) translate( 0, -35px )`
     minutePointer.style.transform = `rotate(${minutesDegrees}deg) translate( 0, -60px )`
 
+    if(hours.toString().length < 2){
+        hours = '0'+hours.toString()
+    }
+    if(minutes.toString().length < 2){
+        minutes = '0'+minutes.toString()
+    }
     timer.innerText = `${hours}:${minutes}`
 }
 
